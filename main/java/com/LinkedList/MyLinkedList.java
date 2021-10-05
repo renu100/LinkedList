@@ -15,6 +15,16 @@ public class MyLinkedList<K> {
 		}
 	}
 
+	public void appendNode(INode newNode) {
+		if (head == null) {
+			head = newNode;
+			tail = newNode;
+		} else {
+			tail.setNext(newNode);
+			tail = newNode;
+		}
+	}
+
 	public void display() {
 		INode temp = head;
 		while (temp != null) {
