@@ -25,6 +25,13 @@ public class MyLinkedList<K> {
 		}
 	}
 
+	public void insertBetween(INode myNode, INode newNode) {
+		INode tempNode = myNode.getNext();
+		myNode.setNext(newNode);
+		newNode.setNext(tempNode);
+
+	}
+
 	public void display() {
 		INode temp = head;
 		while (temp != null) {

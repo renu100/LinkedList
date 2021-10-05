@@ -4,7 +4,7 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-public class MyNodeTest {
+class MyNodeTest {
 
 	@Test
 	void given3NumbersWhenLinkedShouldPassedLinkedListTest() {
